@@ -1,0 +1,35 @@
+/* 完成的样式 */
+.done {
+    color: gray;
+    text-decoration: line-through;
+    background: lightblue;
+}
+
+/* button {
+    display: block;
+} */
+h1 {
+    font-family: Bell MT, Sans-serif;
+    font-weight: bold;
+    color: #ffc0c0;
+}
+
+.btn-input {
+    cursor: pointer;
+    outline: none;
+    color: rgba(243, 76, 43, 0.83);
+    font-size: 18px;
+    background: transparent;
+    border-color: transparent;
+}
+
+ul {
+    display:inline-block;
+}
+
+ul li{
+       display:inline-block;
+       border:1px solid red;
+       margin-right:-8px;
+       padding:0px;
+   }
