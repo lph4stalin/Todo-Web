@@ -12,24 +12,75 @@ h1 {
     font-family: Bell MT, Sans-serif;
     font-weight: bold;
     color: #ffc0c0;
+    text-align: center;
+    font-size: 400%
+}
+
+h3 {
+    margin-left: 5%;
+}
+
+#id-input-add {
+    width: 80%;
+    margin-left: 5%;
+    height: 2em;
+    font-size: 22px;
+    display: inline;
+}
+
+#id-div-number {
+    margin-left: 5%;
+}
+
+#id-div-container {
+    margin-left: 5%;
 }
 
 .btn-input {
     cursor: pointer;
     outline: none;
-    color: rgba(243, 76, 43, 0.83);
-    font-size: 18px;
+    color: #43b0f7;
+    font-size: 35px;
     background: transparent;
     border-color: transparent;
+    display: inline;
 }
 
 ul {
-    display:inline-block;
+    display: inline-block;
 }
 
-ul li{
-       display:inline-block;
-       border:1px solid red;
-       margin-right:-8px;
-       padding:0px;
-   }
+ul li {
+    display: inline-block;
+    border: 1px solid red;
+    margin-right: -8px;
+    padding: 0px;
+}
+
+.todo-cell {
+    border-bottom-style: 1px solid;
+}
+
+.todo-content {
+    margin-left: 5%
+}
+
+.complete {
+    color: #e41616;
+    font-size: 26px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.delete {
+    color: #e41616;
+    font-size: 26px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+    float: right;
+}
