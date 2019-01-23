@@ -1,4 +1,8 @@
-/* 完成的样式 */
+body {
+    margin-left: 5%;
+}
+
+/* 完成的样式，字体灰色、中划线、背景浅蓝色 */
 .done {
     color: gray;
     text-decoration: line-through;
@@ -8,34 +12,25 @@
 /* button {
     display: block;
 } */
+/* 大标题：todo，字体、加粗、颜色、居中，4倍大小 */
 h1 {
     font-family: Bell MT, Sans-serif;
     font-weight: bold;
     color: #ffc0c0;
     text-align: center;
-    font-size: 400%
+    font-size: 400%;
+    margin-left: -10%;
 }
 
-h3 {
-    margin-left: 5%;
-}
-
+/* input框，居中，高2em，里面的字体大小22px，和button位于同一行 */
 #id-input-add {
     width: 80%;
-    margin-left: 5%;
     height: 2em;
     font-size: 22px;
     display: inline;
 }
 
-#id-div-number {
-    margin-left: 5%;
-}
-
-#id-div-container {
-    margin-left: 5%;
-}
-
+/* button的位置、颜色、大小 */
 .btn-input {
     cursor: pointer;
     outline: none;
@@ -44,12 +39,19 @@ h3 {
     background: transparent;
     border-color: transparent;
     display: inline;
+    position: absolute;
+    right: 20%;
+    height: 5%
 }
 
+/* todo分类的位置，需要调整 */
 ul {
     display: inline-block;
+    margin-right: 20%;
+    float: right;
 }
 
+/*  */
 ul li {
     display: inline-block;
     border: 1px solid red;
@@ -61,10 +63,7 @@ ul li {
     border-bottom-style: 1px solid;
 }
 
-.todo-content {
-    margin-left: 5%
-}
-
+/* 完成按钮的设置 */
 .complete {
     color: #e41616;
     font-size: 26px;
@@ -74,6 +73,7 @@ ul li {
     cursor: pointer;
 }
 
+/* 删除按钮的设置 */
 .delete {
     color: #e41616;
     font-size: 26px;
@@ -81,6 +81,6 @@ ul li {
     background-color: transparent;
     outline: none;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 25%;
     float: right;
 }
