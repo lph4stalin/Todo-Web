@@ -2,19 +2,22 @@
 // 增加一个参数status，当获取的状态包含‘done’，就生成带done的模板字符串，否则生成不带done的模板字符串
 const addTodo = function(value, status = "") {
     let content = ''
-    if (status.includes('done')) {
-        content = `<div class="todo-cell">
-            <input class="complete" type="checkbox">
+    if (value !== "") {
+        if (status.includes('done')) {
+            content = `<div class="todo-cell">
+            <input class="complete" type="button" value="✔">
             <span class="todo-content done">${value}</span>
             <button class="delete">x</button>
             </div>`
-    } else {
-        content = `<div class="todo-cell">
-            <input class="complete" type="checkbox">
+        } else {
+            content = `<div class="todo-cell">
+            <input class="complete" type="button" value="✔">
             <span class="todo-content">${value}</span>
             <button class="delete">x</button>
             </div>`
+        }
     }
+
     // 把格式字符串添加到container的最后
     let container = document.querySelector("#id-div-container")
     container.insertAdjacentHTML('beforeend', content)
@@ -28,6 +31,8 @@ const addContent = function() {
     let value = input.value
     // 用input中的value生成todo的格式字符串
     addTodo(value)
+    // 添加任务后清空input
+    input.value = ""
     saveTodo()
 }
 
